@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shane Hicks | Full Stack Developer & Founder, Primus Tech Labs</title>
+  <meta name="description"
+    content="Shane Hicks — Full Stack Developer, Prompt Engineer, and Founder of Primus Tech Labs. CSE student building digital experiences and AI-powered solutions.">
+  <meta name="keywords"
+    content="Shane Hicks, Full Stack Developer, Primus Tech Labs, Web Developer Tamil Nadu, Portfolio">
+  <meta name="author" content="Shane Hicks">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Shane Hicks | Full Stack Developer & Founder, Primus Tech Labs">
+  <meta property="og:description"
+    content="Full Stack Developer, Prompt Engineer, and Founder of Primus Tech Labs. Building digital experiences and AI-powered solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/shane-profile.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shane Hicks | Full Stack Developer">
+  <meta name="twitter:description" content="Founder of Primus Tech Labs. Full Stack Developer & Prompt Engineer.">
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%2300c8ff%22>S</text></svg>">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icomoon/devicon.min.css">
+</head>
+
+<body class="loading">
+
+  <!-- ================= LOADER ================= -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-tag">[ SYSTEM BOOT SEQUENCE ]</div>
+      <div class="loader-logs" id="loaderLogs"></div>
+      <div class="loader-bar">
+        <div class="loader-bar-fill" id="loaderFill"></div>
+      </div>
+      <button class="loader-enter" id="loaderEnter">ENTER SYSTEM</button>
+    </div>
+  </div>
+
+  <!-- ================= BACKGROUND LAYERS ================= -->
+  <div class="bg-grid"></div>
+  <canvas id="particles" class="bg-particles"></canvas>
+  <div class="hud-clock" id="hudClock"></div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">SH<span class="nav-logo-dot">_</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#primus" class="nav-link" data-section="primus">Primus</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+      <a class="nav-resume-btn" href="Shane_Hicks_Resume.pdf" download>Resume <i class="fa-solid fa-arrow-down"></i></a>
+      <button class="nav-toggle" id="navToggle"
+        aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <div class="hero-eyebrow"><span class="dot"></span> SYSTEM INITIALIZED</div>
+          <h1 class="hero-name">SHANE <span>HICKS</span></h1>
+          <div class="hero-role" id="heroRole"></div>
+          <p class="hero-desc">First-year Computer Science Engineering student, Full Stack Developer, and Founder of
+            <strong style="color:var(--text-white)">Primus Tech Labs</strong> — building clean interfaces, AI-driven
+            tools, and real products for real clients.
+          </p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">Accept Mission</a>
+            <a href="#primus" class="btn btn-outline">View Projects</a>
+            <a href="Shane_Hicks_Resume.pdf" download class="btn btn-ghost">Download Resume <i
+                class="fa-solid fa-arrow-down"></i></a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo-wrap">
+            <div class="hero-ring"></div>
+            <div class="hero-ring r2"></div>
+            <div class="hero-photo">
+              <img src="shane-profile.jpg" alt="Shane Hicks portrait">
+              <div class="hero-scan"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-cue">SCROLL<div class="line"></div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">System Profile</div>
+          <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+        </div>
+
+        <div class="about-grid reveal">
+          <div class="about-photo hud-frame">
+            <img src="shane-profile.jpg" alt="Shane Hicks">
+          </div>
+          <div class="about-text">
+            <p><strong style="color:#008fc0;">Who I am</strong> — I'm Shane Hicks, a Computer Science Engineering student at Stella Mary's
+              College of Engineering, and the founder of <strong style="color:#008fc0;">Primus Tech Labs</strong>, a small web development
+              studio I started to turn business ideas into real digital products.</p>
+            <p><strong style="color:#008fc0;">What I do</strong> — I build full-stack web applications, responsive business websites, and
+              AI-powered tools, while also exploring prompt engineering as a way to bridge traditional development with
+              modern AI workflows.</p>
+            <p><strong style="color:#008fc0;">Why Primus Tech Labs</strong> — I started the studio because I wanted to build things that
+              actually ship and serve real clients, not just sit in a portfolio. It's where I learn fastest — managing
+              clients, deadlines, and code at the same time.</p>
+            <p><strong style="color:#008fc0;">Mission & Vision</strong> — To keep leveling up as an engineer while helping small businesses get
+              a real, professional presence online — clean code, clean design, no shortcuts.</p>
+          </div>
+        </div>
+
+        <div class="about-cards">
+          <div class="about-card glass hud-frame reveal">
+            <div class="num">01 // FOUNDER</div>
+            <h3>Primus Tech Labs</h3>
+            <p>Building digital experiences and managing real client work through Primus Tech Labs.</p>
+          </div>
+          <div class="about-card glass hud-frame reveal">
+            <div class="num">02 // DEVELOPER</div>
+            <h3>Full-Stack Developer</h3>
+            <p>Creating fast, responsive, SEO-friendly web applications from front to back.</p>
+          </div>
+          <div class="about-card glass hud-frame reveal">
+            <div class="num">03 // PROBLEM SOLVER</div>
+            <h3>Problem Solver</h3>
+            <p>Turning business ideas into working digital products, end to end.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATUS PANEL ================= -->
+    <section class="status-panel">
+      <div class="container">
+        <div class="status-grid reveal">
+          <div class="status-item">
+            <div class="status-num"><span data-count="6">0</span><span class="suffix">+</span></div>
+            <div class="status-label">Projects Done</div>
+          </div>
+          <div class="status-item">
+            <div class="status-num"><span data-count="2">0</span><span class="suffix">+</span></div>
+            <div class="status-label">Clients Served</div>
+          </div>
+          <div class="status-item">
+            <div class="status-num"><span data-count="14">0</span><span class="suffix">+</span></div>
+            <div class="status-label">Technologies</div>
+          </div>
+          <div class="status-item">
+            <div class="status-num"><span data-count="1">0</span><span class="suffix">yr</span></div>
+            <div class="status-label">Years Learning</div>
+          </div>
+          <div class="status-item">
+            <div class="status-num">24<span class="suffix">hr</span></div>
+            <div class="status-label">Response Time</div>
+          </div>
+          <div class="status-item online">
+            <div class="status-num">ONLINE</div>
+            <div class="status-label">Availability</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Mission Board</div>
+          <h2 class="section-title">Services I <span class="text-gradient">Offer</span></h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card glass hud-frame reveal">
+            <div class="service-icon"><i class="fa-solid fa-rocket"></i></div>
+            <h3>Landing Pages</h3>
+            <p>High-converting single-page sites built for speed and clarity.</p>
+          </div>
+          <div class="service-card glass hud-frame reveal">
+            <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+            <h3>Business Websites</h3>
+            <p>Full multi-section websites for small businesses and academies.</p>
+          </div>
+          <div class="service-card glass hud-frame reveal">
+            <div class="service-icon"><i class="fa-solid fa-id-badge"></i></div>
+            <h3>Portfolio Websites</h3>
+            <p>Personal/brand portfolios designed to leave an impression.</p>
+          </div>
+          <div class="service-card glass hud-frame reveal">
+            <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+            <h3>Responsive Design</h3>
+            <p>Pixel-correct layouts across desktop, tablet, and mobile.</p>
+          </div>
+          <div class="service-card glass hud-frame reveal">
+            <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <h3>SEO Optimization</h3>
+            <p>Technical SEO so your site is actually found on Google.</p>
+          </div>
+          <div class="service-card glass hud-frame reveal">
+            <div class="service-icon"><i class="fa-solid fa-paintbrush"></i></div>
+            <h3>Website Redesign</h3>
+            <p>Modernizing outdated sites without losing existing content.</p>
+          </div>
+          <div class="service-card glass hud-frame reveal">
+            <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>Website Maintenance</h3>
+            <p>Ongoing fixes, updates, and content changes after launch.</p>
+          </div>
+          <div class="service-card glass hud-frame reveal">
+            <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+            <h3>Performance Optimization</h3>
+            <p>Faster load times, better Lighthouse scores, happier users.</p>
+          </div>
+          <div class="service-card glass hud-frame reveal">
+            <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>AI Prompt Engineering</h3>
+            <p>Designing prompts and workflows for real AI-powered features.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRIMUS TECH LABS ================= -->
+    <section id="primus" class="section primus">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Alliance</div>
+          <h2 class="section-title">Primus <span class="text-gradient">Tech Labs</span></h2>
+        </div>
+
+        <div class="primus-intro reveal">
+          <div class="primus-card glass hud-frame">
+            <div class="primus-logo-mark">PRIMUS<span>.</span></div>
+            <p>Primus Tech Labs is the web development studio I founded to deliver clean, fast, and reliable websites
+              for small businesses and academies. We handle everything from design to deployment.</p>
+            <p style="margin-top:14px;"><strong style="color:#008fc0;">Mission &amp; Vision:</strong> Give small
+              businesses a digital presence that actually performs &mdash; and grow into a studio trusted for both web
+              and AI-powered products.</p>
+            <div class="primus-stats">
+              <div>CLIENTS<strong>2+</strong></div>
+              <div>LIVE PROJECTS<strong>3</strong></div>
+            </div>
+            <div style="margin-top:26px;">
+              <a href="https://primustechlabs.netlify.app" target="_blank" rel="noopener" class="btn btn-primary">Visit
+                Company Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="hero-photo-wrap" style="margin:0 auto;">
+            <div class="hero-ring"></div>
+            <div class="hero-ring r2"></div>
+            <div class="hero-photo logo-mode" style="aspect-ratio:1/1;">
+              <img src="primus-logo.png" alt="Primus Tech Labs logo">
+              <div class="hero-scan"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mission-subhead reveal">// Client Missions</div>
+        <div class="mission-grid">
+
+          <div class="mission-card glass hud-frame reveal">
+            <div class="mission-preview"><span class="mission-id">MISSION_01</span><i
+                class="fa-solid fa-graduation-cap"></i></div>
+            <div class="mission-body">
+              <div class="mission-badges"><span class="badge badge-client">Client</span><span
+                  class="badge badge-responsive">Responsive</span></div>
+              <h3>Bhairavi Academy</h3>
+              <p>Responsive business website built for Bhairavi Academy with a clean design and seamless user
+                experience.</p>
+              <div class="mission-stack"><span class="tag">HTML5</span><span class="tag">CSS3</span><span
+                  class="tag">JS</span></div>
+              <div class="mission-links">
+                <a href="https://github.com/arise-07/Bhairavi.git" target="_blank" rel="noopener"><i
+                    class="fa-brands fa-github"></i> Code</a>
+                <a href="https://bhairaviacademy-alpha.vercel.app/" target="_blank" rel="noopener"><i
+                    class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mission-card glass hud-frame reveal">
+            <div class="mission-preview"><span class="mission-id">MISSION_02</span><i class="fa-solid fa-user-plus"></i>
+            </div>
+            <div class="mission-body">
+              <div class="mission-badges"><span class="badge badge-client">Client</span><span
+                  class="badge badge-responsive">Responsive</span></div>
+              <h3>Bhairavi Registration</h3>
+              <p>Firebase-powered registration platform allowing students to register and the business to manage
+                accounts.</p>
+              <div class="mission-stack"><span class="tag">HTML5</span><span class="tag">CSS3</span><span
+                  class="tag">Firebase</span></div>
+              <div class="mission-links">
+                <a href="https://github.com/arise-07/bhairavi_registration.git" target="_blank" rel="noopener"><i
+                    class="fa-brands fa-github"></i> Code</a>
+                <a href="https://join-bhairavi.vercel.app" target="_blank" rel="noopener"><i
+                    class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mission-card glass hud-frame reveal">
+            <div class="mission-preview"><span class="mission-id">MISSION_03</span><i
+                class="fa-solid fa-network-wired"></i></div>
+            <div class="mission-body">
+              <div class="mission-badges"><span class="badge badge-responsive">Responsive</span></div>
+              <h3>Primus Tech Labs Website</h3>
+              <p>The official promotional website for Primus Tech Labs — services, portfolio highlights, and contact
+                info.</p>
+              <div class="mission-stack"><span class="tag">HTML5</span><span class="tag">CSS3</span><span
+                  class="tag">JS</span></div>
+              <div class="mission-links">
+                <a href="https://github.com/arise-07/Primus.git" target="_blank" rel="noopener"><i
+                    class="fa-brands fa-github"></i> Code</a>
+                <a href="https://primustechlabs.netlify.app" target="_blank" rel="noopener"><i
+                    class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Inventory</div>
+          <h2 class="section-title">Skill <span class="text-gradient">Inventory</span></h2>
+        </div>
+        <div class="skills-grid">
+
+          <div class="skill-cat reveal">
+            <h3>Frontend</h3>
+            <div class="skill-row">
+              <div class="skill-top"><span class="skill-name"><i class="devicon-html5-plain colored"></i>
+                  HTML5</span><span class="skill-pct">90%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-pct="90"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span class="skill-name"><i class="devicon-css3-plain colored"></i>
+                  CSS3</span><span class="skill-pct">88%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-pct="88"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span class="skill-name"><i class="devicon-tailwindcss-plain colored"></i> Tailwind
+                  CSS</span><span class="skill-pct">80%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-pct="80"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span class="skill-name"><i class="devicon-javascript-plain colored"></i>
+                  JavaScript</span><span class="skill-pct">78%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-pct="78"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span class="skill-name"><i class="devicon-react-original colored"></i> React
+                  JS</span><span class="skill-pct">72%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-pct="72"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-cat reveal">
+            <h3>Backend & Databases</h3>
+            <div class="skill-row">
+              <div class="skill-top"><span class="skill-name"><i class="devicon-nodejs-plain colored"></i>
+                  Node.js</span><span class="skill-pct">65%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-pct="65"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span class="skill-name"><i class="devicon-firebase-plain colored"></i>
+                  Firebase</span><span class="skill-pct">75%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-pct="75"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span class="skill-name"><i class="devicon-mongodb-plain colored"></i>
+                  MongoDB</span><span class="skill-pct">68%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-pct="68"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span class="skill-name"><i class="devicon-mysql-plain colored"></i>
+                  MySQL</span><span class="skill-pct">70%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-pct="70"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span class="skill-name"><i class="devicon-python-plain colored"></i>
+                  Python</span><span class="skill-pct">74%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-pct="74"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-cat reveal">
+            <h3>Tools</h3>
+            <div class="skill-row">
+              <div class="skill-top"><span class="skill-name"><i class="devicon-git-plain colored"></i> Git</span><span
+                  class="skill-pct">82%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-pct="82"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span class="skill-name"><i class="devicon-github-original colored"></i>
+                  GitHub</span><span class="skill-pct">82%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-pct="82"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span class="skill-name"><i class="devicon-figma-plain colored"></i>
+                  Figma</span><span class="skill-pct">66%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-pct="66"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span class="skill-name"><i style="color:var(--glow-primary)"></i> Canva / Adobe
+                  Express</span><span class="skill-pct">85%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-pct="85"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-cat reveal">
+            <h3>Prompt Engineering</h3>
+            <div class="skill-row">
+              <div class="skill-top"><span class="skill-name"><i class="fa-solid fa-robot"
+                    style="color:var(--glow-primary)"></i> ChatGPT</span><span class="skill-pct">85%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-pct="85"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span class="skill-name"><i class="fa-solid fa-robot"
+                    style="color:var(--glow-primary)"></i> Claude</span><span class="skill-pct">80%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-pct="80"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span class="skill-name"><i class="fa-solid fa-robot"
+                    style="color:var(--glow-primary)"></i> Gemini</span><span class="skill-pct">70%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-pct="70"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PERSONAL PROJECTS ================= -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Personal Quests</div>
+          <h2 class="section-title">Personal <span class="text-gradient">Projects</span></h2>
+        </div>
+        <div class="project-grid">
+
+          <div class="mission-card glass hud-frame reveal">
+            <div class="mission-preview"><span class="mission-id">QUEST_01</span><i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="mission-body">
+              <h3>The System</h3>
+              <p>Inspired by the "System" from Solo Leveling — tracks coding and fitness milestones in real-time, with a
+                penalty timer to stay consistent daily.</p>
+              <div class="mission-stack"><span class="tag">Vanilla JS</span><span class="tag">HTML5</span><span
+                  class="tag">CSS3</span></div>
+              <div class="mission-links">
+                <a href="https://github.com/arise-07/system.git" target="_blank" rel="noopener"><i
+                    class="fa-brands fa-github"></i> Code</a>
+                <a href="https://system-rosy-seven.vercel.app/" target="_blank" rel="noopener"><i
+                    class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mission-card glass hud-frame reveal">
+            <div class="mission-preview"><span class="mission-id">QUEST_02</span><i
+                class="fa-solid fa-person-walking"></i></div>
+            <div class="mission-body">
+              <h3>Posture Guard</h3>
+              <p>A smart posture corrector using computer vision to monitor posture in real-time and alert you to sit or
+                stand correctly.</p>
+              <div class="mission-stack"><span class="tag">Python</span><span class="tag">OpenCV</span><span
+                  class="tag">MediaPipe</span></div>
+              <div class="mission-links">
+                <a href="https://github.com/arise-07/Posture-Detector.git" target="_blank" rel="noopener"><i
+                    class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mission-card glass hud-frame reveal">
+            <div class="mission-preview"><span class="mission-id">QUEST_03</span><i class="fa-solid fa-bowl-food"></i>
+            </div>
+            <div class="mission-body">
+              <h3>SmartBite</h3>
+              <p>A React-based app that tracks food expiry, generates shopping lists, and suggests recipes to reduce
+                waste and simplify meal planning.</p>
+              <div class="mission-stack"><span class="tag">React JS</span><span class="tag">CSS3</span><span
+                  class="tag">+2</span></div>
+              <div class="mission-links">
+                <a href="https://github.com/arise-07/SmartBite.git" target="_blank" rel="noopener"><i
+                    class="fa-brands fa-github"></i> Code</a>
+                <a href="https://smart-bite-s7pj.vercel.app/" target="_blank" rel="noopener"><i
+                    class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE / EDUCATION ================= -->
+    <section id="experience" class="section experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Level Progression</div>
+          <h2 class="section-title">Experience <span class="text-gradient">Log</span></h2>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-lvl">LV.1</div>
+            <h4>Started Programming</h4>
+            <p>First lines of code — HTML, CSS, and the basics of how the web works.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-lvl">LV.2</div>
+            <h4>Learned Full-Stack Development</h4>
+            <p>Expanded into JavaScript, React, Node.js, and database fundamentals.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-lvl">LV.3</div>
+            <h4>Started Freelancing</h4>
+            <p>Took on first real client work — building websites for actual businesses.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-lvl">LV.4</div>
+            <h4>Founded Primus Tech Labs</h4>
+            <p>Turned freelance work into a proper studio with a brand and a process.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-lvl">LV.5</div>
+            <h4>Built Client Projects</h4>
+            <p>Shipped Bhairavi Academy, Bhairavi Registration, and the Primus Tech Labs site.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-lvl">LV.6</div>
+            <h4>Growing as a Software Engineer</h4>
+            <p>Currently leveling up — full-stack depth, AI/prompt engineering, and running the studio.</p>
+          </div>
+        </div>
+
+        <div class="mission-subhead reveal">// Education</div>
+        <div class="edu-grid reveal">
+          <div class="edu-card glass hud-frame">
+            <div class="yr">2025 — PRESENT</div>
+            <h4>B.E. Computer Science & Engineering</h4>
+            <p>Stella Mary's College of Engineering</p>
+            <div class="score">CGPA: 8.1 / 10</div>
+          </div>
+          <div class="edu-card glass hud-frame">
+            <div class="yr">2024 — 2025</div>
+            <h4>Higher Secondary (12th)</h4>
+            <p>St. Joseph's CBSE School</p>
+            <div class="score">76.4%</div>
+          </div>
+          <div class="edu-card glass hud-frame">
+            <div class="yr">2022 — 2023</div>
+            <h4>Secondary Education (10th)</h4>
+            <p>St. Joseph's CBSE School</p>
+            <div class="score">92.2%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Transmissions Received</div>
+          <h2 class="section-title">Client <span class="text-gradient">Testimonials</span></h2>
+        </div>
+
+        <div class="testi-slider reveal">
+          <div class="testi-track" id="testiTrack">
+            <div class="testi-card glass hud-frame">
+              <div class="testi-quote">// TRANSMISSION_01</div>
+              <p class="testi-text">I’m really happy to share my experience with this talented digital content creator.
+                He created my academy’s website in a very professional and attractive way. The work was neat, creative,
+                and completed with great dedication. Now our academy looks more professional and well-organized online.
+                His research, ideas, and presentation skills were excellent throughout the process. Wishing him all the
+                best for his upcoming projects and growing success. Keep shining and growing with intelligence and
+                creativity. Praying for more success and blessings ahead.</p>
+              <div class="testi-person">
+                <div class="testi-avatar">B</div>
+                <div class="testi-meta"><strong>Ms. Parvathy</strong><span>Bhairavi Academy</span></div>
+              </div>
+            </div>
+            <div class="testi-card glass hud-frame">
+              <div class="testi-quote">// TRANSMISSION_02</div>
+              <p class="testi-text">It was a great experience working on our website. Everything was delivered on time,
+                communication was clear, and the final result exceeded our expectations. The website is clean,
+                user-friendly, and reflects our academy in a professional way. We would happily recommend these web
+                development services.</p>
+              <div class="testi-person">
+                <div class="testi-avatar">B</div>
+                <div class="testi-meta"><strong>Team</strong><span>Bhairavi Academy</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-dots" id="testiDots"></div>
+      </div>
+
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Communication Terminal</div>
+          <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info glass hud-frame reveal">
+            <div class="contact-status"><span class="dot"></span> AVAILABLE FOR FREELANCE PROJECTS</div>
+
+            <div class="contact-row"><i class="fa-solid fa-phone"></i>
+              <div><strong>Phone</strong><span>+91 8807349337</span></div>
+            </div>
+            <div class="contact-row"><i class="fa-solid fa-envelope"></i>
+              <div><strong>Email</strong><span>shanehicksofficial@gmail.com</span></div>
+            </div>
+            <div class="contact-row"><i class="fa-solid fa-location-dot"></i>
+              <div><strong>Location</strong><span>Tamil Nadu, India</span></div>
+            </div>
+            <div class="contact-row"><i class="fa-solid fa-language"></i>
+              <div><strong>Languages</strong><span>Tamil, English, Hindi</span></div>
+            </div>
+            <div class="contact-row"><i class="fa-solid fa-clock"></i>
+              <div><strong>Response Time</strong><span>Within 24 hours</span></div>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://github.com/arise-07" target="_blank" rel="noopener"><i
+                  class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/shane-hicks-49231b3a2" target="_blank" rel="noopener"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://instagram.com/mrbardock067" target="_blank" rel="noopener"><i
+                  class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <form class="contact-form glass hud-frame reveal" id="contactForm">
+            <div class="form-row">
+              <div class="field"><label>Name</label><input type="text" name="name" required placeholder="Your name">
+              </div>
+              <div class="field"><label>Email</label><input type="email" name="email" required
+                  placeholder="you@email.com"></div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label>Project Type</label>
+                <select name="projectType">
+                  <option>Personal Project Collab</option>
+                  <option>Business Website</option>
+                  <option>Landing Page</option>
+                  <option>SEO / Maintenance</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Budget</label>
+                <select name="budget">
+                  <option>Not sure yet</option>
+                  <option>Under ₹5,000</option>
+                  <option>₹5,000 – ₹15,000</option>
+                  <option>₹15,000+</option>
+                </select>
+              </div>
+            </div>
+            <div class="field"><label>Message</label><textarea name="message" required
+                placeholder="Tell me about your project..."></textarea></div>
+            <button type="submit" class="btn btn-primary form-submit">Transmit via WhatsApp <i
+                class="fa-brands fa-whatsapp"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RESUME ================= -->
+    <section id="resume" class="section resume">
+      <div class="container">
+        <div class="resume-panel glass hud-frame reveal">
+          <div class="resume-doc">
+            <div class="doc-icon"><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="resume-text">
+            <h2 class="section-title" style="text-align:left;">My Resume</h2>
+            <p>A quick summary of my education, skills, and project history — download it or preview it right here.</p>
+            <div class="resume-btns">
+              <a href="Shane_Hicks_Resume.pdf" download class="btn btn-primary">Download Resume <i
+                  class="fa-solid fa-arrow-down"></i></a>
+              <a href="Shane_Hicks_Resume.pdf" target="_blank" rel="noopener" class="btn btn-outline">Preview Resume <i
+                  class="fa-solid fa-eye"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">SHANE HICKS<span>.</span></div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#primus">Primus</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/arise-07" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/shane-hicks-49231b3a2" target="_blank" rel="noopener"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://instagram.com/mrbardock067" target="_blank" rel="noopener"><i
+              class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Shane Hicks. Powered by Primus Tech Labs.</span>
+        <span class="footer-status"><span class="dot"></span> SYSTEM STATUS: ONLINE</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
